@@ -2,7 +2,7 @@
 # Express API with MySQL Connector
 This is a simple Express.js API that connects to a MySQL database using the `mysql` library. The API has two endpoints: `/api/orders` and `/api/orders/:lim/:off`. The first endpoint returns the first 10 orders from the `orders` table, while the second endpoint returns a specific number of orders based on the `lim` (limit) and `off` (offset) parameters.
 
- # Getting Started 
+ ## Getting Started 
 To run this API on your local machine, follow these steps:
 
 1. Clone this repository to your local machine.
@@ -13,8 +13,8 @@ To run this API on your local machine, follow these steps:
 
 *** API Endpoints ***
 
-# GET http://localhost:8080/api/orders
-# Response
+## GET http://localhost:8080/api/orders
+## Response
 
 The API returns a JSON object containing the first 10 orders from the `orders` table.
 
@@ -22,12 +22,12 @@ The API returns a JSON object containing the first 10 orders from the `orders` t
 
 This endpoint returns a specific number of orders from the `orders` table based on the `lim` (limit) and `off` (offset) parameters.
 
-# Request Parameters
+## Request Parameters
 
 `lim` (required): The number of orders to return.
 `off` (optional): The number of orders to skip before returning the results.
 
-# Response
+## Response
 
 The API returns a JSON object containing the specified number of orders from the `orders` table.
 
