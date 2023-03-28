@@ -18,7 +18,7 @@ To run this API on your local machine, follow these steps:
 
 The API returns a JSON object containing the first 10 orders from the `orders` table.
 
-# GET /api/orders/:lim/:off
+## GET http://localhost:8080/api/orders/:lim/:off
 
 This endpoint returns a specific number of orders from the `orders` table based on the `lim` (limit) and `off` (offset) parameters.
 
