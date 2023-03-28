@@ -36,6 +36,7 @@ app.get("/api/orders/:lim/:off", (req, res) => {
   try {
     // Extract limit and offset from the request parameters
     const { lim, off } = req.params;
+    // Execute query to get data from limit and offset
     connection.query(`select * from orders limit ${lim} offset ${off}`, (err, result, next) => {
       if (err) {
         // Handle errors
