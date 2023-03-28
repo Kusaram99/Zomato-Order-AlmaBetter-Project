@@ -2,11 +2,15 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const cors = require('cors');
 const port = 8080;
 
 // Parse JSON bodies (as sent by API clients)
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Enable CORS policy for all requests
+app.use(cors());
 
 // Import database connection
 const connection = require("./connector");
