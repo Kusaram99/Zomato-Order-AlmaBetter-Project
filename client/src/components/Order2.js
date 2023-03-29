@@ -61,7 +61,7 @@ const Order2 = () => {
                         <li key={index}>
                             <div className="content-controler">
                                 <p>
-                                    <span className="fw-bolder">Name: </span>
+                                    <span className="fw-bolder">Title: </span>
                                     <small> {elem.title}</small>
                                 </p>
                                 <p>
